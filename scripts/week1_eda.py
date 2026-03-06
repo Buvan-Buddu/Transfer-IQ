@@ -68,24 +68,9 @@ def main() -> None:
 
     datasets: List[Tuple[str, Optional[pd.DataFrame], str]] = [
         (
-            "StatsBomb Player Performance",
-            _load_if_exists(processed_dir / "statsbomb_player_performance.csv"),
-            "data/processed/statsbomb_player_performance.csv",
-        ),
-        (
-            "Transfermarkt Market Values",
-            _load_if_exists(raw_dir / "transfermarkt_market_value.csv" / "market_values.csv"),
-            "data/raw/transfermarkt_market_value.csv/market_values.csv",
-        ),
-        (
-            "Transfermarkt Injury History",
-            _load_if_exists(raw_dir / "injury_history.csv" / "injury_history.csv"),
-            "data/raw/injury_history.csv/injury_history.csv",
-        ),
-        (
-            "Twitter Sentiment",
-            _load_if_exists(processed_dir / "twitter_sentiment.csv"),
-            "data/processed/twitter_sentiment.csv",
+            "Player Data",
+            _load_if_exists(Path("data/player_data.csv")),
+            "data/player_data.csv",
         ),
     ]
 
