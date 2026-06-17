@@ -263,7 +263,7 @@ cd frontend
 npm run dev
 ```
 
-Open **http://localhost:5173** in your browser.
+Open **http://localhost:5173](https://agent-69ca9e0dfc584a295653694e--transfer-iq.netlify.app/** in your browser.
 
 ---
 
